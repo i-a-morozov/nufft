@@ -1,0 +1,25 @@
+[project]
+name = "nufft"
+version = "0.1.0"
+description = "Python bindings to a subset of the NUFFT algorithm"
+readme = "README.MD"
+requires-python = ">=3.12"
+keywords = ["nufft", "cython"]
+authors = [{name = "Ivan Morozov"}]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = ["numpy"]
+
+[project.urls]
+documentation = "https://i-a-morozov.github.io/nufft/"
+repository = "https://github.com/i-a-morozov/nufft"
+
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy"]
+build-backend = "setuptools.build_meta"
